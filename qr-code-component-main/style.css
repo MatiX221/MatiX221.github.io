@@ -1,52 +1,68 @@
 @import url(https://fonts.google.com/specimen/Outfit);
 
-:root {
-    --White: hsl(0, 0%, 100%);
-    --Light-gray: hsl(212, 45%, 89%);
-    --Grayish-blue: hsl(220, 15%, 55%);
-    --Dark-blue: hsl(218, 44%, 22);
-    --Font-size: 25px;
-    --Font-Family: "Outfit";
-    --Weight-400: 400;
-    --Weight-700: 700;
-}
-
 body {
-    font-family: var(--Font-Family);
-    background-color: var(--Grayish-blue);
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
 }
 
-#div {
-    position: fixed;
+div {
+    display: block;
+}
+
+.container {
+    width: 290 px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    text-align: center;
+    position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -300px;
-    margin-left: -170px;
-    width: 340px;
-    height: 600px;
-    background-color: var(--White);
-    text-align: center;
-    border-radius: 10px;
+    transform: translate(-50%, -50%);
 }
 
-#code {
-    position: absolute;
-    width: 320px;
-    top: 10px;
-    left: 10px;
-    border-radius: 10px;
+.container h2 {
+    width: 250px;
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
-#improve {
-    font-weight: var(--Weight-700);
-    font-size: 25px;
-    position: relative;
-    top: 330px;
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-#scan {
-    font-weight: var(--Weight-400);
-    font-size: 18px;
-    position: relative;
-    top: 350px;
+.container p {
+    color: hsl(220, 15%, 55%);
+    width: 245px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 45px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container img {
+    width: 270px;
+    padding: 10px;
+    border-radius: 8%;
 }
