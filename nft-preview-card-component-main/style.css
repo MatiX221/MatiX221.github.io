@@ -1,0 +1,66 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 18px;
+    --Weights-300: 300;
+    --Weights-400: 400;
+    --Weights-600: 600;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    color: var(--White);
+    font-size: var(--Font-size);
+}
+
+.container {
+    background-color: var(--Very-dark-blue-card-BG);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    padding: 15px;
+    width: 340px;
+}
+
+.equilibrium {
+    width: 300px;
+}
+
+hr {
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+.description {
+    color: var(--Soft-blue);
+}
+
+.avatar {
+    height: 40px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+}
+
+.creation {
+    display: flex;
+}
+
+.amounts {
+    display: flex;
+}
+
+.ethereum {
+    display: flex;
+}
+
+.clock {
+    display: flex;
+    margin-left: auto;
+    color: var(--Soft-blue);
+}
