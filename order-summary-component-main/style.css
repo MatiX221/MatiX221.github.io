@@ -18,13 +18,40 @@ body {
     font-size: var(--Font-size);
 }
 
+.hero {
+    width: 300px;
+    overflow: hidden;
+}
+
 .main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 .card {
+    align-items: center;
+    background-color: white;
+    width: 300px;
+    border-radius: 5%;
+}
+
+.summary {
+    text-align: center;
+}
+
+.plan {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background-color: var(--Very-pale-blue);
+}
+
+.music {
+    height: 48px;
+}
+
+.details {
+    display: flex;
 }
