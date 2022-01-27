@@ -1,0 +1,60 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading-tats: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    background-color: var(--card-background);
+    display: flex;
+    width: 980px;
+}
+
+h1,
+.stats {
+    color: var(--main-heading-tats);
+}
+
+.insights {
+    color: var(--accent);
+}
+
+.stats {
+    display: flex;
+}
+
+.stats p {
+    display: grid;
+    text-align: center;
+}
+
+.right {
+    position: relative;
+}
+
+h1,
+p,
+div,
+.card,
+img {
+    border: 2px solid red;
+}
