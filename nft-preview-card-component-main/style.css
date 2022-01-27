@@ -17,28 +17,37 @@ body {
     background-color: var(--Very-dark-blue-main-BG);
     color: var(--White);
     font-size: var(--Font-size);
+    color: var(--Soft-blue);
+}
+
+h3 {
+    text-align: left;
+    color: var(--White);
+}
+
+span {
+    color: var(--White);
 }
 
 .container {
     background-color: var(--Very-dark-blue-card-BG);
     text-align: center;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
     padding: 15px;
-    width: 340px;
+    width: 320px;
+    border-radius: 5%;
+    justify-content: center;
 }
 
 .equilibrium {
     width: 300px;
 }
 
-hr {
-    border: 1px solid var(--Very-dark-blue-line);
-}
-
 .description {
-    color: var(--Soft-blue);
+    text-align: left;
 }
 
 .avatar {
@@ -57,10 +66,14 @@ hr {
 
 .ethereum {
     display: flex;
+    height: 18px;
 }
 
 .clock {
-    display: flex;
     margin-left: auto;
-    color: var(--Soft-blue);
+    height: 17px;
+}
+
+.split {
+    border: 1px solid var(--Very-dark-blue-line);
 }

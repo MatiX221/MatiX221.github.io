@@ -1,0 +1,30 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+    --Family: "Red Hat Display", sans-serif;
+    --Font-size: 16px;
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: var(--Pale-blue);
+    background-repeat: repeat-x;
+    font-family: var(--Family);
+    font-size: var(--Font-size);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
