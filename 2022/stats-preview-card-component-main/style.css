@@ -12,6 +12,14 @@
 
 body {
     background-color: var(--main-background);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -36,25 +44,4 @@ h1,
 
 .insights {
     color: var(--accent);
-}
-
-.stats {
-    display: flex;
-}
-
-.stats p {
-    display: grid;
-    text-align: center;
-}
-
-.right {
-    position: relative;
-}
-
-h1,
-p,
-div,
-.card,
-img {
-    border: 2px solid red;
 }
