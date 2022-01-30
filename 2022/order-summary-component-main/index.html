@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <section class="main">
+        <div class="container">
+            <div class="image"></div>
             <div class="card">
-                <img class="hero" src="./images/illustration-hero.svg" alt="hero" />
                 <div class="summary">
                     <h1>Order Summary</h1>
                     <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
@@ -21,14 +21,16 @@
                 <div class="plan">
                     <img class="music" src="./images/icon-music.svg" alt="music-icon" />
                     <div class="details">
-                        <p>Annual Plan</p>
+                        <h4>Annual Plan</h4>
                         <p>$59.99/year</p>
                     </div>
-                    <a class="change">Change</a>
+                    <a href="#" class="change">Change</a>
                 </div>
-                <a class="button payment">Proceed to Payment</a>
-                <a class="button cancel">Cancel Order</a>
+                <div class="buttons">
+                    <a class="payment">Proceed to Payment</a>
+                    <a class="cancel">Cancel Order</a>
+                </div>
             </div>
-        </section>
+        </div>
     </body>
 </html>
