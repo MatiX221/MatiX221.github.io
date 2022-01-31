@@ -1,5 +1,5 @@
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 :root {
     --Bright-orange: hsl(31, 77%, 52%);
@@ -8,7 +8,7 @@
     --paragraphs: hsla(0, 0%, 100%, 0.75);
     --background-headings-buttons: hsl(0, 0%, 95%);
     --Font-Lexend: "Lexend Deca", sans-serif;
-    --Font-Big-Shoulders: "Big Shoulders Display", sans-serif;
+    --Font-Big-Shoulders: "Big Shoulders Display", cursive;
 }
 
 body {
@@ -22,7 +22,6 @@ body {
     padding: 0;
     margin: 0;
     font-size: 15px;
-    overflow: hidden;
 }
 
 p {
@@ -38,7 +37,8 @@ h1 {
 }
 
 .container__card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 50em;
 }
 
@@ -114,9 +114,7 @@ h1 {
 
 @media only screen and (max-width: 800px) {
     body {
-        margin: 1em;
         align-items: unset;
-        height: 1000px;
     }
 
     .container {
@@ -125,8 +123,11 @@ h1 {
     }
 
     .container__card {
+        display: grid;
         max-width: 100%;
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        width: calc(100% - 2em);
+        margin: 1em;
     }
 
     .container__card__sedans {
