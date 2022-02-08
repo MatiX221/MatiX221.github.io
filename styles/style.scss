@@ -9,32 +9,23 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .container {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     .card {
         width: 20em;
         height: 25em;
         box-shadow: 0 0 1em 0.1em $shadow;
         border-radius: 1.3em;
         overflow: hidden;
-        height: 100%;
+        margin: 1em;
         &__grid {
             padding: 1em 1em;
-            gap: 1em;
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: 3;
-            overflow-x: auto;
-            overscroll-behavior-inline: contain;
             a {
                 text-decoration: none;
                 color: black;
@@ -50,8 +41,6 @@ body {
         }
         .details {
             background-color: $background-color;
-            display: flex;
-            flex-direction: column;
             .header {
                 padding: 0 0.5em 0em 0.5em;
             }
@@ -60,6 +49,34 @@ body {
                 margin: 0;
                 width: 100%;
                 text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .container {
+        .card {
+            &__grid {
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        align-items: center;
+        .card {
+            &__grid {
+                gap: 1em;
+                display: grid;
+                grid-auto-flow: column;
+                overflow-x: auto;
+                overscroll-behavior-inline: contain;
             }
         }
     }
