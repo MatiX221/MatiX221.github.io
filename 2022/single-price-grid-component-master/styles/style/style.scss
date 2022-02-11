@@ -1,0 +1,104 @@
+@use "../scss/index" as *;
+
+* {
+    box-sizing: border-box;
+    font-family: $ff-karla;
+    font-weight: $fw-4;
+}
+
+body {
+    font-size: $fs;
+    background-color: $clr-Light-Gray;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: $fw-7;
+}
+
+.container {
+    width: calc(375px - 2em);
+    margin: 1em;
+    @include mq(medium) {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card {
+    &__top {
+        padding: 2em;
+        background-color: white;
+        border-radius: 0.8rem 0.8rem 0 0;
+        .header {
+            color: $clr-Cyan;
+        }
+        .paragraph {
+            font-size: $fs - 2px;
+            line-height: 2em;
+        }
+    }
+    &__bottom {
+        color: white;
+        background-color: $clr-Cyan;
+        border-radius: 0 0 0.8rem 0.8rem;
+        overflow: hidden;
+        @include mq(medium) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @include mq(medium) {
+        width: 40em;
+    }
+}
+
+.paragraph {
+    opacity: 0.5;
+    &--green {
+        color: $clr-Bright-Yellow;
+        font-weight: $fw-7;
+    }
+
+    &--dolar {
+        display: flex;
+        align-items: center;
+        .price {
+            font-size: 2.5rem;
+        }
+        .time {
+            opacity: 0.5;
+            margin: 1em;
+        }
+    }
+}
+
+.why-us {
+    padding: 2em;
+    background-color: lighten($clr-Cyan, 2%);
+    .description {
+        line-height: 0.2em;
+    }
+}
+
+.subscription {
+    padding: 2em;
+    .sign {
+        border: 0px;
+        color: white;
+        font-weight: $fw-7;
+        background-color: $clr-Bright-Yellow;
+        padding: 1em;
+        width: 100%;
+        border-radius: 0.4em;
+    }
+}

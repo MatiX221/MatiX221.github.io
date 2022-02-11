@@ -12,7 +12,6 @@
 
 body {
     background-color: var(--Very-dark-blue-main-BG);
-    font-family: "Outfit", sans-serif;
     color: var(--White);
     font-size: var(--Font-size);
     color: var(--Soft-blue);
@@ -36,7 +35,7 @@ body {
 
 .card {
     width: 15em;
-    padding: 1.5em;
+    padding: 2em;
 }
 
 .card h3 {
