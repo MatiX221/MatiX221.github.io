@@ -1,0 +1,72 @@
+@use "../scss/index" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $clr-bg;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    @include mq(medium) {
+        align-items: center;
+    }
+}
+.card {
+    width: 20em;
+    height: 25em;
+    box-shadow: 0 0 1em 0.1em $clr-shadow;
+    border-radius: 1.3em;
+    overflow: hidden;
+    margin: 1em;
+    &__grid {
+        padding: 1em 1em;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        @include mq(small) {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mq(medium) {
+            gap: 1em;
+            display: grid;
+            grid-auto-flow: column;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+.image {
+    background-color: $clr-bg;
+    img {
+        width: 100%;
+        object-fit: contain;
+        box-shadow: 0 0 1em 0.1em $clr-shadow;
+    }
+}
+.details {
+    background-color: $clr-bg;
+    .header {
+        padding: 0 0.5em 0em 0.5em;
+    }
+    .date {
+        padding: 0 0.4em 0.4em 0;
+        margin: 0;
+        width: 100%;
+        text-align: right;
+    }
+}
