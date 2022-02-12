@@ -258,6 +258,7 @@ body {
 }
 .card .content img:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 .card .content h2 {
   font-size: 18px;
@@ -274,6 +275,7 @@ body {
 }
 .card .content:hover {
   background-color: #645fda;
+  cursor: pointer;
 }
 .card--work .image {
   background-image: url(../../images/icon-work.svg);
@@ -425,6 +427,7 @@ body {
 }
 .options button:hover {
   color: white;
+  cursor: pointer;
 }
 @media screen and (min-width: 65em) {
   .options {

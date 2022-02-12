@@ -64,6 +64,7 @@ body {
         }
         img:hover {
             opacity: 0.5;
+            cursor: pointer;
         }
         h2 {
             font-size: $fs;
@@ -81,6 +82,7 @@ body {
     }
     .content:hover {
         background-color: mix($clr-blue, $clr-desaturated-blue);
+        cursor: pointer;
     }
     &--work {
         .image {
@@ -230,6 +232,7 @@ body {
     }
     button:hover {
         color: white;
+        cursor: pointer;
     }
     @include mq(medium) {
         margin: 0;
