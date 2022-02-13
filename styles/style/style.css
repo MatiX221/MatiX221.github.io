@@ -40,6 +40,10 @@ body {
   overflow: hidden;
   margin: 1em;
 }
+.card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
 .card__grid {
   padding: 1em 1em;
 }

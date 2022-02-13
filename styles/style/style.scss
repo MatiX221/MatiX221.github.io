@@ -28,6 +28,9 @@ body {
     border-radius: 1.3em;
     overflow: hidden;
     margin: 1em;
+    &:hover {
+        transform: scale(1.03);
+    }
     &__grid {
         padding: 1em 1em;
         a {
