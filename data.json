@@ -5,11 +5,11 @@
     },
     {
         "type": "file",
-        "name": "node.js"
+        "name": "index.html"
     },
     {
         "type": "file",
-        "name": "index.html"
+        "name": "node.js"
     },
     {
         "type": "file",
@@ -73,45 +73,11 @@
                     },
                     {
                         "type": "file",
-                        "name": "README.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "package.json"
-                    }
-                ]
-            },
-            {
-                "name": "process",
-                "type": "folder",
-                "children": [
-                    {
-                        "type": "file",
-                        "name": ".eslintrc"
-                    },
-                    {
-                        "type": "file",
-                        "name": "browser.js"
-                    },
-                    {
-                        "type": "file",
-                        "name": "index.js"
-                    },
-                    {
-                        "type": "file",
-                        "name": "LICENSE"
-                    },
-                    {
-                        "type": "file",
                         "name": "package.json"
                     },
                     {
                         "type": "file",
                         "name": "README.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "test.js"
                     }
                 ]
             },
@@ -142,16 +108,50 @@
                 ]
             },
             {
-                "name": "util",
+                "name": "process",
                 "type": "folder",
                 "children": [
+                    {
+                        "type": "file",
+                        "name": ".eslintrc"
+                    },
+                    {
+                        "type": "file",
+                        "name": "index.js"
+                    },
+                    {
+                        "type": "file",
+                        "name": "LICENSE"
+                    },
+                    {
+                        "type": "file",
+                        "name": "browser.js"
+                    },
                     {
                         "type": "file",
                         "name": "package.json"
                     },
                     {
                         "type": "file",
+                        "name": "test.js"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README.md"
+                    }
+                ]
+            },
+            {
+                "name": "util",
+                "type": "folder",
+                "children": [
+                    {
+                        "type": "file",
                         "name": "LICENSE"
+                    },
+                    {
+                        "type": "file",
+                        "name": "package.json"
                     },
                     {
                         "type": "file",
@@ -297,11 +297,11 @@
                             },
                             {
                                 "type": "file",
-                                "name": "desktop-preview.jpg"
+                                "name": "desktop-design.jpg"
                             },
                             {
                                 "type": "file",
-                                "name": "desktop-design.jpg"
+                                "name": "desktop-preview.jpg"
                             },
                             {
                                 "type": "file",
@@ -323,93 +323,11 @@
                             },
                             {
                                 "type": "file",
-                                "name": "icon-suvs.svg"
-                            },
-                            {
-                                "type": "file",
                                 "name": "icon-sedans.svg"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "fylo-data-storage-component-master",
-                "type": "folder",
-                "children": [
-                    {
-                        "type": "file",
-                        "name": ".gitignore"
-                    },
-                    {
-                        "type": "file",
-                        "name": "README.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "index.html"
-                    },
-                    {
-                        "type": "file",
-                        "name": "README-template.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "style-guide.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "style.css"
-                    },
-                    {
-                        "name": "design",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "desktop-design.jpg"
                             },
                             {
                                 "type": "file",
-                                "name": "desktop-preview.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "mobile-design.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "images",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "bg-desktop.png"
-                            },
-                            {
-                                "type": "file",
-                                "name": "bg-mobile.png"
-                            },
-                            {
-                                "type": "file",
-                                "name": "favicon-32x32.png"
-                            },
-                            {
-                                "type": "file",
-                                "name": "icon-document.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "icon-folder.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "icon-upload.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "logo.svg"
+                                "name": "icon-suvs.svg"
                             }
                         ]
                     }
@@ -497,15 +415,245 @@
                             },
                             {
                                 "type": "file",
-                                "name": "style.scss"
-                            },
-                            {
-                                "type": "file",
                                 "name": "_index.scss"
                             },
                             {
                                 "type": "file",
+                                "name": "style.scss"
+                            },
+                            {
+                                "type": "file",
                                 "name": "_root.scss"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "fylo-data-storage-component-master",
+                "type": "folder",
+                "children": [
+                    {
+                        "type": "file",
+                        "name": ".gitignore"
+                    },
+                    {
+                        "type": "file",
+                        "name": "index.html"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README-template.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "style-guide.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "style.css"
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "images",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "bg-desktop.png"
+                            },
+                            {
+                                "type": "file",
+                                "name": "bg-mobile.png"
+                            },
+                            {
+                                "type": "file",
+                                "name": "icon-document.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "favicon-32x32.png"
+                            },
+                            {
+                                "type": "file",
+                                "name": "icon-folder.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "icon-upload.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "logo.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "huddle-landing-page-with-single-introductory-section-master",
+                "type": "folder",
+                "children": [
+                    {
+                        "type": "file",
+                        "name": ".gitignore"
+                    },
+                    {
+                        "type": "file",
+                        "name": "index.html"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README-template.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "style-guide.md"
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "active-states.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "images",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "bg-desktop.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "bg-mobile.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "favicon-32x32.png"
+                            },
+                            {
+                                "type": "file",
+                                "name": "illustration-mockups.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "logo.svg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "profile-card-component-main",
+                "type": "folder",
+                "children": [
+                    {
+                        "type": "file",
+                        "name": ".gitignore"
+                    },
+                    {
+                        "type": "file",
+                        "name": "index.html"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README-template.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "README.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "style-guide.md"
+                    },
+                    {
+                        "type": "file",
+                        "name": "style.css"
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "images",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "bg-pattern-bottom.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "bg-pattern-card.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "bg-pattern-top.svg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "favicon-32x32.png"
+                            },
+                            {
+                                "type": "file",
+                                "name": "image-victor.jpg"
                             }
                         ]
                     }
@@ -525,7 +673,7 @@
                     },
                     {
                         "type": "file",
-                        "name": "style-guide.md"
+                        "name": "README-template.md"
                     },
                     {
                         "type": "file",
@@ -533,11 +681,11 @@
                     },
                     {
                         "type": "file",
-                        "name": "style.css"
+                        "name": "style-guide.md"
                     },
                     {
                         "type": "file",
-                        "name": "README-template.md"
+                        "name": "style.css"
                     },
                     {
                         "name": "images",
@@ -661,85 +809,11 @@
                             },
                             {
                                 "type": "file",
-                                "name": "pattern-background-desktop.svg"
-                            },
-                            {
-                                "type": "file",
                                 "name": "pattern-background-mobile.svg"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "profile-card-component-main",
-                "type": "folder",
-                "children": [
-                    {
-                        "type": "file",
-                        "name": ".gitignore"
-                    },
-                    {
-                        "type": "file",
-                        "name": "index.html"
-                    },
-                    {
-                        "type": "file",
-                        "name": "README-template.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "README.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "style-guide.md"
-                    },
-                    {
-                        "type": "file",
-                        "name": "style.css"
-                    },
-                    {
-                        "name": "design",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "desktop-design.jpg"
                             },
                             {
                                 "type": "file",
-                                "name": "desktop-preview.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "mobile-design.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "images",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "bg-pattern-bottom.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "bg-pattern-top.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "bg-pattern-card.svg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "favicon-32x32.png"
-                            },
-                            {
-                                "type": "file",
-                                "name": "image-victor.jpg"
+                                "name": "pattern-background-desktop.svg"
                             }
                         ]
                     }
@@ -759,11 +833,11 @@
                     },
                     {
                         "type": "file",
-                        "name": "README.md"
+                        "name": "README-template.md"
                     },
                     {
                         "type": "file",
-                        "name": "README-template.md"
+                        "name": "README.md"
                     },
                     {
                         "type": "file",
@@ -829,29 +903,11 @@
                     },
                     {
                         "type": "file",
-                        "name": "style-guide.md"
-                    },
-                    {
-                        "type": "file",
                         "name": "style.css"
                     },
                     {
-                        "name": "design",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "desktop-design.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "desktop-preview.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "mobile-design.jpg"
-                            }
-                        ]
+                        "type": "file",
+                        "name": "style-guide.md"
                     },
                     {
                         "name": "images",
@@ -868,6 +924,24 @@
                             {
                                 "type": "file",
                                 "name": "image-header-mobile.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
                             }
                         ]
                     }
@@ -908,24 +982,6 @@
                         ]
                     },
                     {
-                        "name": "design",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "desktop-design.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "desktop-preview.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "mobile-design.jpg"
-                            }
-                        ]
-                    },
-                    {
                         "name": "images",
                         "type": "folder",
                         "children": [
@@ -956,6 +1012,24 @@
                             {
                                 "type": "file",
                                 "name": "image-patrick.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
                             }
                         ]
                     },
@@ -1001,15 +1075,33 @@
                     },
                     {
                         "type": "file",
-                        "name": "README.md"
-                    },
-                    {
-                        "type": "file",
                         "name": "README-template.md"
                     },
                     {
                         "type": "file",
+                        "name": "README.md"
+                    },
+                    {
+                        "type": "file",
                         "name": "style-guide.md"
+                    },
+                    {
+                        "name": "design",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "desktop-design.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "desktop-preview.jpg"
+                            },
+                            {
+                                "type": "file",
+                                "name": "mobile-design.jpg"
+                            }
+                        ]
                     },
                     {
                         "name": "images",
@@ -1018,24 +1110,6 @@
                             {
                                 "type": "file",
                                 "name": "favicon-32x32.png"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "design",
-                        "type": "folder",
-                        "children": [
-                            {
-                                "type": "file",
-                                "name": "desktop-preview.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "desktop-design.jpg"
-                            },
-                            {
-                                "type": "file",
-                                "name": "mobile-design.jpg"
                             }
                         ]
                     },
@@ -1076,34 +1150,34 @@
                                         "name": "_index.scss"
                                     },
                                     {
-                                        "name": "mixins",
-                                        "type": "folder",
-                                        "children": [
-                                            {
-                                                "type": "file",
-                                                "name": "_index.scss"
-                                            },
-                                            {
-                                                "type": "file",
-                                                "name": "_mixins.scss"
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "else",
                                         "type": "folder",
                                         "children": [
-                                            {
-                                                "type": "file",
-                                                "name": "_index.scss"
-                                            },
                                             {
                                                 "type": "file",
                                                 "name": "_colors.scss"
                                             },
                                             {
                                                 "type": "file",
+                                                "name": "_index.scss"
+                                            },
+                                            {
+                                                "type": "file",
                                                 "name": "_typology.scss"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "mixins",
+                                        "type": "folder",
+                                        "children": [
+                                            {
+                                                "type": "file",
+                                                "name": "_mixins.scss"
+                                            },
+                                            {
+                                                "type": "file",
+                                                "name": "_index.scss"
                                             }
                                         ]
                                     }
@@ -1119,11 +1193,11 @@
                 "children": [
                     {
                         "type": "file",
-                        "name": ".gitignore"
+                        "name": "data.json"
                     },
                     {
                         "type": "file",
-                        "name": "data.json"
+                        "name": ".gitignore"
                     },
                     {
                         "type": "file",
@@ -1131,11 +1205,11 @@
                     },
                     {
                         "type": "file",
-                        "name": "index.js"
+                        "name": "README-template.md"
                     },
                     {
                         "type": "file",
-                        "name": "README-template.md"
+                        "name": "index.js"
                     },
                     {
                         "type": "file",
@@ -1236,6 +1310,24 @@
                                         "name": "_index.scss"
                                     },
                                     {
+                                        "name": "base",
+                                        "type": "folder",
+                                        "children": [
+                                            {
+                                                "type": "file",
+                                                "name": "_reset.scss"
+                                            },
+                                            {
+                                                "type": "file",
+                                                "name": "_index.scss"
+                                            },
+                                            {
+                                                "type": "file",
+                                                "name": "_typography.scss"
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "name": "abstracts",
                                         "type": "folder",
                                         "children": [
@@ -1254,24 +1346,6 @@
                                             {
                                                 "type": "file",
                                                 "name": "_mixins.scss"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "base",
-                                        "type": "folder",
-                                        "children": [
-                                            {
-                                                "type": "file",
-                                                "name": "_index.scss"
-                                            },
-                                            {
-                                                "type": "file",
-                                                "name": "_reset.scss"
-                                            },
-                                            {
-                                                "type": "file",
-                                                "name": "_typography.scss"
                                             }
                                         ]
                                     }

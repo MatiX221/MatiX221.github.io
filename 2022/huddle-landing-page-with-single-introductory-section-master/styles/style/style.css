@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: nonec;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*-----------------------
+    start of styles
+-----------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/bg-mobile.svg");
+  background-color: #674baf;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 40em) {
+  body {
+    background-image: url("../../images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 65em) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.images {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.images__logo {
+  width: 30%;
+}
+.images__mockups {
+  margin-top: 3em;
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 90%;
+  max-height: 15em;
+}
+@media screen and (min-width: 65em) {
+  .images__logo {
+    max-width: 18em;
+  }
+  .images__mockups {
+    padding-bottom: 6em;
+    max-height: 100%;
+    max-width: 100%;
+    width: 90%;
+    margin-right: auto;
+  }
+}
+
+.content {
+  color: white;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+  margin: 0 2em 2em 2em;
+}
+.content .btn :hover {
+  background-color: #e882e8;
+  color: white;
+}
+.content .header {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+}
+.content .paragraph {
+  margin: 0 auto;
+  width: 19em;
+  max-width: 100%;
+}
+.content button {
+  text-align: center;
+  margin: 2em 0;
+  border: 0;
+  background-color: white;
+  padding: 1em 4em;
+  border-radius: 3em;
+  max-width: 90%;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+}
+.content .social {
+  margin-top: auto;
+}
+.content .social .svg :hover {
+  border: 2px solid #e882e8;
+  fill: #e882e8;
+}
+.content .social svg {
+  margin: 0.3em;
+  fill: white;
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0.4em;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+@media screen and (min-width: 65em) {
+  .content .text {
+    text-align: left;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40vw;
+  }
+  .content .header {
+    font-size: 4rem;
+  }
+  .content .paragraph {
+    font-size: 1.5rem;
+    margin: unset;
+  }
+  .content .social {
+    margin-top: auto;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,137 @@
+@use "../scss/index" as *;
+
+/*-----------------------
+    start of styles
+-----------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../images/bg-mobile.svg");
+    background-color: $clr-Violet;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $ff-body;
+    @include mq(small) {
+        background-image: url("../../images/bg-desktop.svg");
+        background-size: cover;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include mq(medium) {
+        flex-direction: row;
+    }
+}
+.images {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    object-fit: contain;
+    &__logo {
+        width: 30%;
+    }
+    &__mockups {
+        margin-top: 3em;
+        align-self: center;
+        max-width: 90%;
+        max-height: 15em;
+    }
+    @include mq(medium) {
+        &__logo {
+            max-width: 18em;
+        }
+        &__mockups {
+            padding-bottom: 6em;
+            max-height: 100%;
+            max-width: 100%;
+            width: 90%;
+            margin-right: auto;
+        }
+    }
+}
+
+.content {
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    margin: 0 2em 2em 2em;
+    .btn {
+        :hover {
+            background-color: $clr-Soft-Magenta;
+            color: white;
+        }
+    }
+    .header {
+        font-family: $ff-heading;
+        font-size: 1.5em;
+    }
+    .paragraph {
+        margin: 0 auto;
+        width: 19em;
+        max-width: 100%;
+    }
+    button {
+        text-align: center;
+        margin: 2em 0;
+        border: 0;
+        background-color: white;
+        padding: 1em 4em;
+        border-radius: 3em;
+        max-width: 90%;
+        box-shadow: 0 0 5px 1px black;
+    }
+    .social {
+        margin-top: auto;
+        .svg {
+            :hover {
+                border: 2px solid $clr-Soft-Magenta;
+                fill: $clr-Soft-Magenta;
+            }
+        }
+        svg {
+            margin: 0.3em;
+            fill: white;
+            height: 2.5em;
+            width: 2.5em;
+            padding: 0.4em;
+            border: 2px solid white;
+            border-radius: 100%;
+        }
+    }
+    @include mq(medium) {
+        .text {
+            text-align: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40vw;
+        }
+        .header {
+            font-size: 4rem;
+        }
+        .paragraph {
+            font-size: 1.5rem;
+            margin: unset;
+        }
+        .social {
+            margin-top: auto;
+            margin-left: auto;
+        }
+    }
+}
