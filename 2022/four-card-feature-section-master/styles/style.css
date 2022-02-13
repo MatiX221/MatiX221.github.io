@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* 200, 400, 600 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  text-align: center;
+  margin: 1em;
+  font-weight: 400;
+  color: #a3a5ae;
+  background-color: #fafafa;
+}
+
+.container__text .header {
+  font-size: 1.5em;
+}
+.container__text .header--small {
+  font-weight: 200;
+}
+.container__text .header--big {
+  font-weight: 600;
+  color: #4c4e61;
+}
+.container__text p {
+  margin: 1em;
+}
+.container__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+}
+.container__cards .card {
+  text-align: right;
+  margin: 0 1em;
+  padding: 1em 2em 1em 2em;
+  -webkit-box-shadow: 0px 10px 20px 1px #a3a5ae;
+          box-shadow: 0px 10px 20px 1px #a3a5ae;
+  border-radius: 0.5em;
+  width: calc(375px - 4em);
+}
+.container__cards .card__middle .card {
+  margin: 2em;
+}
+.container__cards .card--supervisor {
+  border-top: 5px solid #45d3d3;
+}
+.container__cards .card--builder {
+  border-top: 5px solid #ea5353;
+}
+.container__cards .card--karma {
+  border-top: 5px solid #fcaf4a;
+}
+.container__cards .card--calculator {
+  border-top: 5px solid #549ef2;
+}
+.container__cards .card h2 {
+  color: #4c4e61;
+}
+.container__cards .card p {
+  font-size: 13px;
+}
+.container__cards .card h2,
+.container__cards .card p {
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.container__cards .card img {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .container__text {
+    margin-bottom: 2em;
+  }
+  .container__text .header {
+    font-size: 2em;
+  }
+  .container__text p {
+    width: 35em;
+    margin: 0 auto;
+  }
+  .container__cards {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container__cards > * {
+    margin: 0;
+  }
+  .container__cards .card__left {
+    margin-left: auto;
+  }
+  .container__cards .card__right {
+    margin-right: auto;
+  }
+}
