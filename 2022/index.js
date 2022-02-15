@@ -25,7 +25,7 @@ async function data () {
                     html += '<a href="./' + header + '/">';
                     html += '<div class="card">';
                     html += '<div class="image">';
-                    html += '<img class="img" src="./' + header + '/design/desktop-design.jpg" alt="' + header + '"></div>';
+                    html += '<img class="img" src="./' + header + '/design/desktop-preview.jpg" alt="' + header + '"></div>';
                     html += '<section class="details">';
                     html += '<h1 class="header">' + header.replaceAll( "-", " " ) + '</h1>';
                     html += '</section></div></a>'

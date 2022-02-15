@@ -33,7 +33,7 @@ body {
 
 .card {
   width: 20em;
-  height: 25em;
+  height: 30em;
   -webkit-box-shadow: 0 0 1em 0.1em #9b9b9b;
           box-shadow: 0 0 1em 0.1em #9b9b9b;
   border-radius: 1.3em;

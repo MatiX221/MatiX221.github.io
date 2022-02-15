@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Where in the world?</title>
+        <link rel="stylesheet" href="./styles/style/style.css" />
+    </head>
+    <body>
+        <header class="top">
+            <h1>Where in the world?</h1>
+            <button class="btn btn__change" onclick="ChangeMode()">
+                <div class="btn__image"><img src="./images/moon-solid.svg" alt="moon" /></div>
+                <div class="btn__text">Dark mode</div>
+            </button>
+        </header>
+        <main class="container">
+            <div class="container__details" style="visibility: hidden">
+                <div class="back">
+                    <button class="btn btn__back" onclick="goBack()" disabled>
+                        <svg height="2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z" /></svg>Back
+                    </button>
+                </div>
+                <div class="informations"></div>
+            </div>
+            <div class="container__grid">
+                <div class="container__search">
+                    <div class="search">
+                        <svg class="search__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" /></svg>
+                        <!-- <img class="search__image" src="./images/magnifying-glass-solid.svg" alt="search logo" /> -->
+                        <input class="search__input" type="text" placeholder="Search for a country..." />
+                    </div>
+                    <select name="Filter" id="filter" class="">
+                        <option value="region" id="region" class="option" hidden>Filter by region</option>
+                        <option value="Africa" id="Africa" class="option">Africa</option>
+                        <option value="Americas" id="Americas" class="option">America</option>
+                        <option value="Asia" id="Asia" class="option">Asia</option>
+                        <option value="Europe" id="Europe" class="option">Europe</option>
+                        <option value="Oceania" id="Oceania" class="option">Oceania</option>
+                    </select>
+                </div>
+                <div class="card__grid"></div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

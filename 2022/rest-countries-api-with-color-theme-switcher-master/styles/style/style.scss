@@ -1,0 +1,395 @@
+@use "../scss/index" as *;
+
+/*--------------------
+start of styles
+--------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: $ff;
+    color: $clr-Very-Dark-Blue;
+}
+
+body {
+    background-color: darken($clr-Very-Light-Gray, 10%);
+}
+
+h1 {
+    font-weight: $fw-8;
+    font-size: 1.3em;
+}
+
+.dark-mode {
+    * {
+        color: $clr-White;
+    }
+    background-color: $clr-Very-Dark-Blue;
+    .top {
+        background-color: $clr-Dark-Blue;
+    }
+    #filter,
+    .search,
+    .search__input,
+    .details,
+    .additional,
+    .oncard,
+    .population,
+    .region,
+    .capital,
+    h1 {
+        background-color: $clr-Dark-Blue;
+    }
+    .btn {
+        &__back {
+            background-color: $clr-Dark-Blue;
+        }
+        &__change {
+            background-color: $clr-Dark-Blue;
+            color: $clr-White;
+        }
+        &__image {
+            background-color: $clr-Dark-Blue;
+            fill: white;
+        }
+        &__text {
+            background-color: $clr-Dark-Blue;
+        }
+        &__border {
+            background-color: $clr-Dark-Blue;
+            box-shadow: 0 0 5px 1px lighten($clr-Dark-Blue, 10%);
+        }
+    }
+    .card {
+        background-color: $clr-Dark-Blue;
+        box-shadow: 0 0 5px 1px $clr-Dark-Blue;
+    }
+    .flag {
+        box-shadow: 0 0 10px 1px $clr-Dark-Blue;
+        &__back {
+            background-color: lighten($clr-Dark-Blue, 5%);
+            p {
+                background-color: lighten($clr-Dark-Blue, 5%);
+            }
+        }
+        img {
+            box-shadow: 0 0 5px 1px $clr-Dark-Blue;
+        }
+    }
+    .informations {
+        &__details {
+            background-color: $clr-Very-Dark-Blue;
+            img {
+                box-shadow: 0 0 5px 1px lighten($clr-Dark-Blue, 5%);
+            }
+        }
+    }
+}
+.container {
+    position: relative;
+    &__details {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 4.5em);
+        visibility: hidden;
+        .back {
+            display: flex;
+            margin-top: 2em;
+            height: 5em;
+            width: 100%;
+        }
+    }
+    &__grid {
+        margin-top: 1em;
+        width: 100%;
+        position: absolute;
+    }
+    &__search {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+    @include mq(small) {
+        &__search {
+            flex-direction: row;
+        }
+    }
+}
+
+.clickable {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    background-color: unset;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    outline: none;
+    border: 0;
+    &__change {
+        box-shadow: 0 0 5px 1px darken($clr-Very-Light-Gray, 20%);
+        border-radius: 1em;
+        height: 70%;
+        margin: auto 0 auto auto;
+        background-color: $clr-White;
+        display: flex;
+    }
+    &__back {
+        margin: auto 3em;
+        border-radius: 0.5em;
+        box-shadow: 0 0 5px 1px darken($clr-Very-Light-Gray, 20%);
+        background-color: darken($clr-Very-Light-Gray, 10%);
+        width: 6em;
+        height: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin-right: 1em;
+        }
+    }
+    &__image {
+        height: 20px;
+        width: 20px;
+        margin: auto 0.5em auto 0;
+    }
+    &__text {
+        align-self: center;
+        font-weight: $fw-6;
+    }
+    &__border {
+        border: 0;
+        margin: 0.4em;
+        background-color: darken($clr-Very-Light-Gray, 10%);
+        box-shadow: 0 0 5px 1px darken($clr-Very-Light-Gray, 20%);
+        border-radius: 0.4em;
+        padding: 0.4em 0.8em;
+    }
+}
+
+.bolder {
+    font-weight: $fw-8;
+}
+
+.top {
+    height: 4.5em;
+    padding: 0.5em 2em;
+    display: flex;
+    box-shadow: 0 0 5px 1px $clr-Dark-Gray;
+    background-color: $clr-Very-Light-Gray;
+}
+
+.search {
+    display: flex;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    width: 25em;
+    max-width: 90%;
+    margin: 0 1em;
+    box-shadow: 0px 0px 5px 1px $clr-Dark-Gray;
+    background-color: $clr-Very-Light-Gray;
+    &__image {
+        margin: auto 1em auto 0;
+        height: 20px;
+    }
+    &__input {
+        border: 0;
+        outline: none;
+        color: $clr-Dark-Gray;
+        width: 80%;
+    }
+    @include mq(small) {
+        margin: auto 1em auto 5em;
+    }
+}
+
+#filter {
+    margin: 1em auto 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 1px $clr-Dark-Gray;
+    @include mq(small) {
+        margin: auto 5em auto auto;
+    }
+}
+
+.card {
+    box-shadow: 0 0 5px 1px $clr-Dark-Gray;
+    width: 20em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    background-color: $clr-Very-Light-Gray;
+    perspective: 2000px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    * {
+        border-radius: 0.5em;
+    }
+    &__grid {
+        width: 100%;
+        margin: 1em 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @include mq(small) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @include mq(medium) {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @include mq(large) {
+        &__grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &:hover {
+        .flag {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    width: 20em;
+    position: relative;
+    box-shadow: 0 0 10px 1px $clr-Dark-Gray;
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+    &__front,
+    &__back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    &__front {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($clr-Very-Light-Gray, 7%);
+        transform: rotateY(180deg);
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0.2em;
+            font-weight: $fw-6;
+        }
+        .name {
+            font-weight: $fw-3;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.details {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: $clr-Very-Light-Gray;
+    h2 {
+        font-weight: $fw-8;
+        font-size: 1.3em;
+    }
+    .additional {
+        margin-top: auto;
+        margin-bottom: 2.5em;
+    }
+}
+
+.informations {
+    &__details {
+        background-color: darken($clr-Very-Light-Gray, 10%);
+        margin: 1em;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__image {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        img {
+            align-self: center;
+            box-shadow: 0 0 10px 1px $clr-Dark-Gray;
+            max-width: 90%;
+            width: 25em;
+        }
+    }
+    &__text {
+        align-self: center;
+        width: 25em;
+        max-width: 90%;
+        padding: 1em;
+    }
+    @include mq(small) {
+        &__text {
+            width: 40em;
+        }
+    }
+    @include mq(medium) {
+        &__details {
+            flex-direction: row;
+        }
+        &__image {
+            width: 50%;
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.text {
+    &__additional {
+        margin-top: 2em;
+    }
+    &__borders {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-height: 20em;
+    }
+    @include mq(small) {
+        &__additional {
+            margin: 1em;
+        }
+        &__container {
+            width: 35em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__borders {
+            p {
+                grid-column: 1/ 3;
+            }
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: 1/3;
+        }
+    }
+}
