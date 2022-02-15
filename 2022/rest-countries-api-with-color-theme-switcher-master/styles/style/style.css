@@ -478,6 +478,14 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.card:hover {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
 .card:hover .flag {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
