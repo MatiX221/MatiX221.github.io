@@ -12,7 +12,7 @@ async function getData ( url, region ) {
                 var { name, flag, region, population, capital, nativeName } = data[ i ]
                 population = numberWithCommas( population );
                 var details = "'" + name + "'"
-                html += '<button class="clickable" onclick="getDetails(' + details + ')"><div class="card">';
+                html += '<div class="card clickable" onclick="getDetails(' + details + ')">';
                 html += '<div class="flag">';
                 html += '<div class="flag__front">'
                 html += '<img src="' + flag + '"alt="flag"></div>';
@@ -23,7 +23,7 @@ async function getData ( url, region ) {
                 html += '<span class="bolder">Population: </span>' + population + '</p>';
                 html += '<p class="region"><span class="bolder">Region: </span>' + region + '</p>';
                 html += '<p class="capital"><span class="bolder">Capital: </span>' + capital + '</p>';
-                html += '</div></section></div></button>';
+                html += '</div></section></div>';
             }
         }
         else {
@@ -32,7 +32,7 @@ async function getData ( url, region ) {
                 if ( region == continet ) {
                     population = numberWithCommas( population );
                     var details = "'" + name + "'"
-                    html += '<button class="clickable" onclick="getDetails(' + details + ')"><div class="card">';
+                    html += '<div class="card clickable" onclick="getDetails(' + details + ')">';
                     html += '<div class="flag">';
                     html += '<div class="flag__front">'
                     html += '<img src="' + flag + '"alt="flag"></div>';
@@ -43,7 +43,7 @@ async function getData ( url, region ) {
                     html += '<span class="bolder">Population: </span>' + population + '</p>';
                     html += '<p class="region"><span class="bolder">Region: </span>' + region + '</p>';
                     html += '<p class="capital"><span class="bolder">Capital: </span>' + capital + '</p>';
-                    html += '</div></section></div></button>';
+                    html += '</div></section></div>';
                 }
             }
         }
