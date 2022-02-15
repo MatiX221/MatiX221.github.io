@@ -129,12 +129,14 @@ h1 {
     outline: none;
     border: 0;
     &__change {
+        padding: 0.5em 1em;
         box-shadow: 0 0 5px 1px darken($clr-Very-Light-Gray, 20%);
         border-radius: 1em;
         height: 70%;
         margin: auto 0 auto auto;
         background-color: $clr-White;
         display: flex;
+        cursor: pointer;
     }
     &__back {
         margin: auto 3em;

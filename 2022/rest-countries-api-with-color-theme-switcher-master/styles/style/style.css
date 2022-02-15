@@ -325,6 +325,7 @@ h1 {
   border: 0;
 }
 .btn__change {
+  padding: 0.5em 1em;
   -webkit-box-shadow: 0 0 5px 1px #c7c7c7;
           box-shadow: 0 0 5px 1px #c7c7c7;
   border-radius: 1em;
@@ -334,6 +335,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 .btn__back {
   margin: auto 3em;

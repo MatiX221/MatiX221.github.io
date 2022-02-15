@@ -10,10 +10,10 @@
     <body>
         <header class="top">
             <h1>Where in the world?</h1>
-            <button class="btn btn__change" onclick="ChangeMode()">
+            <div class="btn btn__change" onclick="ChangeMode()">
                 <div class="btn__image"><img src="./images/moon-solid.svg" alt="moon" /></div>
                 <div class="btn__text">Dark mode</div>
-            </button>
+            </div>
         </header>
         <main class="container">
             <div class="container__details" style="visibility: hidden">
@@ -31,7 +31,7 @@
                         <!-- <img class="search__image" src="./images/magnifying-glass-solid.svg" alt="search logo" /> -->
                         <input class="search__input" type="text" placeholder="Search for a country..." />
                     </div>
-                    <select name="Filter" id="filter" class="">
+                    <select name="Filter" id="filter">
                         <option value="region" id="region" class="option" hidden>Filter by region</option>
                         <option value="Africa" id="Africa" class="option">Africa</option>
                         <option value="Americas" id="Americas" class="option">America</option>
