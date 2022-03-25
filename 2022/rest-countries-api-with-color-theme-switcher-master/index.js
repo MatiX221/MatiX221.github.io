@@ -1,6 +1,6 @@
 async function getData ( url, region ) {
     const response = await fetch( url );
-    const data = await response.json();
+    var data = await response.json();
     const length = Object.keys( data ).length;
     const { message } = data;
     const continet = region;
