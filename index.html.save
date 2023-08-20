@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+        <link rel="stylesheet" href="./styles/normalize/normalize.css" />
+        <link rel="stylesheet" href="./styles/style/style.css" />
+    </head>
+    <body>
+        <div class="container" role="main">
+            <div class="card__grid">
+                <a href="./vanilla/">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./images/vanilla.png" alt="vanilla" />
+                        </div>
+                        <div class="details">
+                            <h1 class="header">html/css/vanilla js</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="./react">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./images/react.png" alt="react" />
+                        </div>
+                        <div class="details">
+                            <h1 class="header">react js</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="./school/">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./images/school.png" alt="school" />
+                        </div>
+                        <div class="details">
+                            <h1 class="header">school</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
